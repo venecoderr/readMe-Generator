@@ -1,9 +1,8 @@
-// TODO: Include packages needed for this application
 const fs = require("fs");
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
-// TODO: Create an array of questions for user input
+//Array of questions for user input
 const questions = [
     {
     type: 'input',
@@ -34,7 +33,7 @@ const questions = [
     type: "list",
     name: "license",
     message: "Please select a license applicable to this project:",
-    choices: ["MIT", "APACHE2.0", "Boost1.0", "MPL2.0", "BSD2", "BSD3", "none"],
+    choices: ["MIT", "APACHE2.0", "GPL-3.0", "Unlicense", "none"],
     },
     {
     type: 'input',
@@ -53,15 +52,16 @@ const questions = [
     },
 ]
 
+// Writes the file
 function writeToFile(fileName, data) {
     return fs.writeFileSync(fileName, data);
 }
   
-  // Initializing app
+// Initializing app
 function init() {
     inquirer.prompt(questions).then((responses) => {
       console.log("Creating Professional README.md File...");
-      writeToFile("./README.md", generateMarkdown({ ...responses }));
+      writeToFile("./Generated/README.md", generateMarkdown({ ...responses }));
     });
 }
 
