@@ -1,6 +1,6 @@
-const fs = require("fs");
-const inquirer = require("inquirer");
-const generateMarkdown = require("./utils/generateMarkdown");
+const fs = require("fs")
+const inquirer = require("inquirer")
+const generateMarkdown = require("./utils/generateMarkdown")
 
 //Array of questions for user input
 const questions = [
@@ -54,15 +54,20 @@ const questions = [
 
 // Writes the file
 function writeToFile(fileName, data) {
-    return fs.writeFileSync(fileName, data);
+    return fs.writeFileSync(fileName, data)
 }
-  
-// Initializing app
-function init() {
-    inquirer.prompt(questions).then((responses) => {
-      console.log("Creating Professional README.md File...");
-      writeToFile("./Generated/README.md", generateMarkdown({ ...responses }));
-    });
+ 
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms))
 }
 
-init();
+// Initializing app
+function init() {
+    inquirer.prompt(questions).then((responses) => {          
+        writeToFile("./Generated/README.md", generateMarkdown({ ...responses }))
+        console.log('Writing your readMe file...')
+        sleep(1500).then(() => { console.log('readMe saved!')})      
+    })
+}
+
+init()
