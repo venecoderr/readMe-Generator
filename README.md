@@ -27,11 +27,14 @@ Fill up the differente sections for your readMe
 
 ![alt text](./assets/img/ss2.png)
 
-Choose a license and input your contact information, then wait and let the magic happen
+Choose a license and input your contact information, then wait and let the magic happen, you'll find your readMe in the 'generated' folder
 
 ![alt text](./assets/img/ss3.png)
 ## Credits
-None
+
+Thanks to James Hibbard for the sleep function snippet
+https://www.sitepoint.com/delay-sleep-pause-wait/
+
 ## Tests
 N/A
 ## Questions

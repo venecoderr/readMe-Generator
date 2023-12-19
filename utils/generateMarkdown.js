@@ -1,7 +1,7 @@
 //Returns a license badge
 function renderLicenseBadge(license) {
   if (license !== "None") {
-    return `![Github license](https://img.shields.io/badge/license-${license}-blue.svg)`;
+    return `![Github license](https://img.shields.io/badge/license-${license}-blue.svg)`
   }else{
     return ""
   }
@@ -40,6 +40,7 @@ ${renderLicenseLink(data.license)}
 ## Installation
 ${data.install}
 ## Usage
+//Don't forget to add your screenshots with [alt text](./screenshot.jpeg)
 ${data.instructions}
 ## Credits
 ${data.contributions}
