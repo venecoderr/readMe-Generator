@@ -1,7 +1,7 @@
-# The placeholder project
-![Github license](https://img.shields.io/badge/license-Unlicense-blue.svg)
+# readMe Generator
+![Github license](https://img.shields.io/badge/license-MIT-blue.svg)
 ## Description
-A placeholder description
+A general description of the app
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
@@ -9,16 +9,16 @@ A placeholder description
 - [Credits](#credits)
 - [License](#license)
 ## Installation
-For a placeholder readMe
+No installing required
 ## Usage
 //Don't forget to add your screenshots with [alt text](./screenshot.jpeg)
-For my project
+General instructions
 ## Credits
-A readMe generator
+Me, Myself and I
 ## Tests
-I think it works well
+No testing it works ;)
 ## Questions
 For questions contact me at [Github](https://github.com/venecoderr) or [Email me](mailto:josefrm.55@gmail.com)
 ## License
 
-This project is under the Unlicense license
+This project is under the MIT license
